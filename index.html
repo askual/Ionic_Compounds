@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Tutorial</title>
+	<script src = "phaser.js"></script>
+	<script src = "Preloader.js"></script>
+	<script src = "periodicTable.js"></script>
+	<script src = "Level1.js"></script>
+	<script src = "names.js"></script>
+</head>
+
+
+
+
+<body>
+<script type="text/javascript">
+window.onload = function(){
+		var game =  new Phaser.Game(1340, 750, Phaser.CANVAS, '');
+		game.state.add('Boot', Game.Boot);
+		game.state.add('Preloader', Game.Preloader);
+		game.state.add('Level1', Game.Level1);
+		game.state.start('Preloader');
+	}
+</script>
+</body>
+</html>
+
+
+
